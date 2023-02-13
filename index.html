@@ -9,6 +9,7 @@
   <!-- CSS -->
   <link rel="stylesheet" href="./src/styles/reset.css" />
   <link rel="stylesheet" href="./src/styles/index.css" />
+  <link rel="stylesheet" href="./src/styles/globalStyle.css">
 
   <!-- FONTE -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -20,81 +21,143 @@
 </head>
 
 <body>
-  <nav>
+  <nav class="menu">
     <h1>TechPoster</h1>
     <button>Sair</button>
   </nav>
-  <main>
-    <section>
-      
-      <div>
-        <div>
-          <img src="#" alt="">
-          <span>Samuel Leão</span>
-          <span>Front end Engineer</span>
+  <main class="conteiner">
+
+    <section class="conteiner__post">
+
+      <div class="conteiner__post__user">
+        <div class="conteiner__user">
+          <img src="./src/assets/img/user1.svg" alt="Samuel Leão">
+          <div>
+            <span>Samuel Leão</span>
+            <p>Front end Engineer</p>
+          </div>
         </div>
-        <input type="text">
-        <input type="text">
-        <div>
+
+        <input class="text__box text__box--titulo" type="text" placeholder="Digitar titulo do post">
+        <textarea class="text__box text__box--descricao" maxlength="1000" cols="30" rows="10"
+          placeholder="Digitar descrição do post"></textarea>
+        <div class="conteiner__post__button">
           <button>Postar</button>
         </div>
       </div>
 
-      <aside>
-        <span>Sugestões para você seguir</span>
-        <div>
-          <ul>
-            <li>
+      <aside class="conteiner__sugestao">
+        <h1>Sugestões para você seguir</h1>
+        <ul class="conteiner__cards">
+
+          <li class="card">
+            <div class="conteiner__user">
+              <img src="./src/assets/img/user3.svg" alt="Carlos Lima">
               <div>
-                <img src="#" alt="">
                 <span>Carlos Lima</span>
-                <span>UX e UI Designer</span>
+                <p>UX e UI Designer</p>
               </div>
-              <button>Seguindo</button>
-            </li>
-            <li>
+            </div>
+            <button id="btnSeguindo">Seguindo</button>
+          </li>
+          <li class="card">
+            <div class="conteiner__user">
+              <img src="./src/assets/img/user6.svg" alt="Larissa Camargo">
               <div>
-                <img src="#" alt="">
                 <span>Larissa Camargo</span>
-                <span>UI Developer</span>
+                <p>UI Developer</p>
               </div>
-              <button>Seguir</button>
-            </li>
-            <li>
+            </div>
+            <button>Seguir</button>
+          </li>
+          <li class="card">
+            <div class="conteiner__user">
+              <img src="./src/assets/img/user7.svg" alt="Felipe Gutierry">
               <div>
-                <img src="#" alt="">
                 <span>Felipe Gutierry</span>
-                <span>Full Stack Developer</span>
+                <p>Full Stack Developer</p>
               </div>
-              <button>Seguir</button>
-            </li>
-          </ul>
-        </div>
+            </div>
+            <button>Seguir</button>
+          </li>
+
+        </ul>
 
       </aside>
     </section>
 
-    <section>
+    <section class="conteiner__publication">
       <h1>Posts</h1>
-      <ul>
-        <li>
-          <div>
-            <img src="#" alt="">
-            <span>Felipe Gutierry</span>
-            <span>Full Stack Developer</span>
+      <ul class="list__publication">
+        <li class="publication">
+          <div class="conteiner__user">
+            <img src="./src/assets/img/user1.svg" alt="Samuel Leão">
+            <div>
+              <span>Samuel Leão</span>
+              <p>Front end Engineer</p>
+            </div>
           </div>
-          <article>
-            <h4>Titulo de um Postagem na Rede Social que estou Usando como Exemplo</h4>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis, odio rem. Exercitationem velit pariatur eligendi debitis tempora ipsam molestias dolor, perferendis aut cum cupiditate, ratione iusto quaerat harum, odio nobis.</p>
+          <article class="publication__text">
+            <h1>Empresa de Tecnologia da Informação abre vagas para programa de estágio</h1>
+            <p>
+              A Framework Digital, empresa mineira especializada em Tecnologia da Informação, irá iniciar o seu sexto programa de estágio, com o prazo de inscrições entre os dias 08 e 28 de agosto.
+            </p>
           </article>
-          <div>
+          <div class="publication__button">
             <button>Abrir Post</button>
-            <img src="#" alt="">
-            <span>25</span>
+            <div class="publication__button__icon">
+              <img src="./src/assets/img/heart_2.png" alt="">
+              <span>25</span>
+            </div>
+          </div>
+        </li>
+        <li class="publication">
+          <div class="conteiner__user">
+            <img src="./src/assets/img/user4.svg" alt="Carla Maria">
+            <div>
+              <span>Carla Maria</span>
+              <p>Back end Engineer</p>
+            </div>
+          </div>
+          <article class="publication__text">
+            <h1>Programa de estágio abre vagas em Segurança da Informação com regime remoto</h1>
+            <p>
+              Em Segurança da Informação, as vagas são destinadas às áreas de Security Operations Center (SOC), Administração de Dispositivos de Segurança (ADS), Resposta a Incidentes (RI), Segurança e Privacidade e Consultoria Técnica.
+            </p>
+          </article>
+          <div class="publication__button">
+            <button>Abrir Post</button>
+            <div class="publication__button__icon">
+              <img src="./src/assets/img/heart_1.png" alt="">
+              <span>19</span>
+            </div>
+          </div>
+        </li>
+       <li class="publication">
+          <div class="conteiner__user">
+            <img src="./src/assets/img/user5.svg" alt="Júlia Martins">
+            <div>
+              <span>Júlia Martins</span>
+              <p>Devop's</p>
+            </div>
+          </div>
+          <article class="publication__text">
+            <h1>O que é programação orientada a objetos e programação funcional</h1>
+            <p>
+              A Programação Funcional é uma orientação focada na programação declarativa. Conhecendo mais a programação funcional a partir de códigos podemos nos deparar de primeira com o conceito mais central da programação.
+            </p>
+          </article>
+          <div class="publication__button">
+            <button>Abrir Post</button>
+            <div class="publication__button__icon">
+              <img src="./src/assets/img/heart_1.png" alt="">
+              <span>8</span>
+            </div>
           </div>
         </li>
       </ul>
     </section>
+
   </main>
 </body>
 
