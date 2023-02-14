@@ -17,6 +17,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
     rel="stylesheet" />
 
+  <!-- JAVASCRIPT -->
+  <script type="module" src="./src/scripts/index.js"></script>
   <title>Criando rede social</title>
 </head>
 
@@ -26,9 +28,7 @@
     <button>Sair</button>
   </nav>
   <main class="conteiner">
-
     <section class="conteiner__post">
-
       <div class="conteiner__post__user">
         <div class="conteiner__user">
           <img src="./src/assets/img/user1.svg" alt="Samuel Leão">
@@ -37,7 +37,6 @@
             <p>Front end Engineer</p>
           </div>
         </div>
-
         <input class="text__box text__box--titulo" type="text" placeholder="Digitar titulo do post">
         <textarea class="text__box text__box--descricao" maxlength="1000" cols="30" rows="10"
           placeholder="Digitar descrição do post"></textarea>
@@ -45,12 +44,11 @@
           <button>Postar</button>
         </div>
       </div>
-
       <aside class="conteiner__sugestao">
         <h1>Sugestões para você seguir</h1>
-        <ul class="conteiner__cards">
+        <ul class="conteiner__sugestao__users">
 
-          <li class="card">
+          <!-- <li class="card__user">
             <div class="conteiner__user">
               <img src="./src/assets/img/user3.svg" alt="Carlos Lima">
               <div>
@@ -60,7 +58,7 @@
             </div>
             <button id="btnSeguindo">Seguindo</button>
           </li>
-          <li class="card">
+          <li class="card__user">
             <div class="conteiner__user">
               <img src="./src/assets/img/user6.svg" alt="Larissa Camargo">
               <div>
@@ -70,7 +68,7 @@
             </div>
             <button>Seguir</button>
           </li>
-          <li class="card">
+          <li class="card__user">
             <div class="conteiner__user">
               <img src="./src/assets/img/user7.svg" alt="Felipe Gutierry">
               <div>
@@ -79,17 +77,15 @@
               </div>
             </div>
             <button>Seguir</button>
-          </li>
+          </li> -->
 
         </ul>
-
       </aside>
     </section>
-
     <section class="conteiner__publication">
       <h1>Posts</h1>
-      <ul class="list__publication">
-        <li class="publication">
+      <ul class="conteiner__publication__list">
+        <!-- <li class="publication">
           <div class="conteiner__user">
             <img src="./src/assets/img/user1.svg" alt="Samuel Leão">
             <div>
@@ -154,10 +150,31 @@
               <span>8</span>
             </div>
           </div>
-        </li>
+        </li> -->
       </ul>
     </section>
+    <dialog class="modal__conteiner">
+      <!-- <div class="modal">
+        <button class="modal__close">
+          <img src="./src/assets/img/close.png" alt="fechar">
+        </button>
+        <div class="conteiner__user">
+          <img src="./src/assets/img/user1.svg" alt="Samuel Leão">
+          <div>
+            <span>Samuel Leão</span>
+            <p>Front end Engineer</p>
+          </div>
+        </div>
 
+        <article class="modal__article">
+          <h1 class="modal__title">O que é programação orientada a objetos e programação funcional</h1>
+          <p class="modal__text">
+            A Framework Digital, empresa mineira especializada em Tecnologia da Informação, irá iniciar o seu sexto programa de estágio, com o prazo de inscrições entre os dias 08 e 28 de agosto. O programa é conhecido como Framework Padawans, com inspiração nos filmes Star Wars. Nas histórias, os iniciantes fazem treinamentos para se tornar cavaleiros Jedi, que compõem o lado bom da força.
+          </p>
+        </article>
+
+      </div> -->
+    </dialog>
   </main>
 </body>
 
