@@ -53,7 +53,13 @@ function createPublication(post) {
     button.classList.add('modal__open')
 
     imgIcons.src = "./src/assets/img/heart_1.png"
+    imgIcons.dataset.imgId = post.id
+    imgIcons.classList.add('imgIcons')
+    imgIcons.id = 'likeOff'
+
     spanIcons.innerText = post.likes
+    spanIcons.dataset.spanId = post.id
+    spanIcons.classList.add('spanIcons')
 
     divIcons.append(imgIcons, spanIcons)
 
@@ -100,6 +106,7 @@ function createSugestao(user){
 
     button.innerText = 'Seguir'
     button.dataset.sugestaoId = user.id
+    button.classList.add('btnSeguir')
 
     li.append(divUser, button)
 

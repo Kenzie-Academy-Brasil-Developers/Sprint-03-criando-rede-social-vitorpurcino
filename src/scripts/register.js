@@ -29,7 +29,6 @@ export function newPost(array){
 
 export function registerPost(array){
     const btnPost = document.querySelector('#submitBtn')
-    const inputs = document.querySelectorAll('.text__box')
 
     btnPost.addEventListener('click', (event) =>{
         newPost(array)
