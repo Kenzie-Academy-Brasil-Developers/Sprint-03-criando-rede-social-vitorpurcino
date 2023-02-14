@@ -2,10 +2,9 @@ import { closeModal, createModal } from "./modal.js";
 
 export function render(array) {
     const postsUl = document.querySelector('.conteiner__publication__list')
-
     postsUl.innerHTML = ''
 
-    array.forEach(post => {
+    array.slice().reverse().forEach(post => {
         const publicacao = createPublication(post)
 
         postsUl.appendChild(publicacao)
