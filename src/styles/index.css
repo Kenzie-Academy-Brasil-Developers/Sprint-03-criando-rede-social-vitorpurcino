@@ -125,7 +125,7 @@ body {
     max-width: 100%;
 }
 
-.conteiner__post__button button {
+.post__button {
     width: 4.375rem;
     height: 2.375rem;
     border-radius: var(--border-radius);
@@ -376,7 +376,7 @@ body {
         /* border: 1px solid tomato; */
     }
 
-    .conteiner__post__button button {
+    .post__button {
         background-color: var(--brand-1);
         color: var(--grey-6);
     }

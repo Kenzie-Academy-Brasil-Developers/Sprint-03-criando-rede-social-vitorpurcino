@@ -10,6 +10,8 @@ export function render(array) {
 
         postsUl.appendChild(publicacao)
     });
+
+    renderModal(array)
 }
 
 function createPublication(post) {
