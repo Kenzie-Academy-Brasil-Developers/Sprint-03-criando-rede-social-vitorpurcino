@@ -22,16 +22,16 @@ export function newPost(array){
 
     if(contador > 0){
         alert('Informe os dados antes de Postar')
+    }else{
+        array.push(post)
     }
-    array.push(post)
 }
 
 export function registerPost(array){
     const btnPost = document.querySelector('#submitBtn')
+    const inputs = document.querySelectorAll('.text__box')
 
     btnPost.addEventListener('click', (event) =>{
-        // event.preventDefault()
-
         newPost(array)
         render(array)
     })
