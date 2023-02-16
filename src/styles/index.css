@@ -24,7 +24,7 @@ nav{
 .menu h1 {
     font-size: var(--title-2-size);
     color: var(--grey-6);
-    font-weight: 600;
+    font-weight: var(--weight-600);
 }
 
 .menu button {
@@ -67,7 +67,6 @@ nav{
     display: flex;
     flex-direction: row;
     align-items: center;
-    /* flex-wrap: wrap; */
     gap: 0.75rem;
     max-width: 100%;
     /* border: 1px solid black; */
@@ -90,13 +89,13 @@ nav{
 
 .conteiner__user div span {
     font-size: var(--title-2-size);
-    font-weight: 600;
+    font-weight: var(--weight-600);
     color: var(--grey-1);
 }
 
 .conteiner__user div p {
     font-size: var(--text-3-size);
-    font-weight: 400;
+    font-weight: var(--weight-600);
     color: var(--grey-2);
     padding-left: 0.125rem;
 }
@@ -139,7 +138,7 @@ nav{
     background-color: var(--grey-4);
     font-size: var(--text-2-size);
     color: var(--grey-3);
-    font-weight: 600;
+    font-weight: var(--weight-600);
     cursor: pointer;
 }
 
@@ -156,7 +155,7 @@ nav{
 
 .conteiner__sugestao h1 {
     font-size: var(--title-2-size);
-    font-weight: var(--title-2-weight);
+    font-weight: var(--weight-600);
     color: var(--grey-1);
 }
 
@@ -190,7 +189,7 @@ nav{
     background-color: var(--grey-6);
     color: var(--grey-1);
     font-size: var(--text-2-size);
-    font-weight: 600;
+    font-weight: var(--weight-600);
     cursor: pointer;
 }
 
@@ -202,7 +201,7 @@ nav{
     background-color: var(--brand-1);
     color: var(--grey-6);
     font-size: var(--text-2-size);
-    font-weight: var(--text-2-weight);
+    font-weight: var(--weight-400);
 }
 
 .conteiner__publication {
@@ -219,7 +218,7 @@ nav{
 
 .conteiner__publication h1 {
     font-size: var(--title-1-size);
-    font-weight: var(--title-1-weight);
+    font-weight: var(--weight-700);
     line-height: var(--title-1-height);
     /* border: 1px solid coral; */
 }
@@ -258,13 +257,13 @@ nav{
 
 .publication__text h1 {
     font-size: var(--title-1-size);
-    font-weight: var(--title-1-weight);
+    font-weight: var(--weight-700);
     line-height: var(--title-1-height);
 }
 
 .publication__text p {
     font-size: var(--text-2-size);
-    font-weight: var(--text-2-weight);
+    font-weight: var(--weight-400);
     line-height: 1.75rem;
 }
 
@@ -284,7 +283,7 @@ nav{
     background-color: var(--grey-1);
     color: var(--grey-6);
     font-size: var(--text-2-size);
-    font-weight: 600;
+    font-weight: var(--weight-600);
     border-radius: var(--border-radius);
     cursor: pointer;
 }
@@ -303,7 +302,7 @@ nav{
 
 .publication__button__icon span {
     font-size: var(--text-2-size);
-    font-weight: var(--text-2-weight);
+    font-weight: var(--weight-400);
 }
 
 .modal__conteiner {
@@ -345,7 +344,7 @@ nav{
 
 .modal__title {
     font-size: var(--title-1-size);
-    font-weight: var(--title-1-weight);
+    font-weight: var(--weight-700);
     line-height: var(--title-1-height);
     color: var(--grey-2);
     /* border: 1px solid blue; */
@@ -353,7 +352,7 @@ nav{
 
 .modal__text {
     font-size: var(--text-1-size);
-    font-weight: var(--text-1-weight);
+    font-weight: var(--weight-400);
     line-height: 1.75rem;
     color: var(--grey-2);
     /* border: 1px solid blue; */
